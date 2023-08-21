@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array</title>
+  </head>
+  <body>
+    <script>
+      var City = ["Pabna", "Dhaka", "Rajshai"];
+
+      document.write(City);
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // array loop start
+
+      var Sector = [
+        "Web Development",
+        "Wrodpress",
+        "UI/UX Design",
+        "Graphics Design",
+      ];
+
+      var i;
+      for (i = 0; i < Sector.length; i = i + 1) {
+        document.write(Sector[i] + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+    <script>
+      // for in loop
+
+      var product = [
+        "Apple",
+        "Bananan",
+        "Avogado",
+        "Peyara",
+        "Apple",
+        "Bananan",
+        "Avogado",
+        "Peyara",
+      ];
+
+      for (var item in product) {
+        document.write(product[item] + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // object for in loop start
+
+      var person = [
+        (name = "Robiul ISlam"),
+        (age = 21),
+        (city = "Pabna"),
+        (sector = "Web Development"),
+      ];
+
+      for (var item in person) {
+        document.write(person[item] + "<br>");
+      }
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+    <script>
+      // Array Concate And Array Form start
+      document.write("<h3>Array Concate And Array Form</h3> ");
+
+      var array1 = ["A", "B", "C"];
+      var array2 = ["D", "E", "F"];
+      var array3 = array1.concat(array2);
+      document.write(array3);
+
+      document.write("<br>");
+      document.write("<br>");
+      // Array Concate And Array Form end
+    </script>
+
+    <script>
+      // string to array covert start
+
+      document.write("<h3>string to array covert</h3> <br>");
+
+      var title = "Robil Islam";
+
+      var titlearray = Array.from(title);
+
+      document.write(titlearray[7]);
+      document.write("<br>");
+      document.write("<br>");
+
+      // string to array covert end
+    </script>
+
+    <script>
+      // Array Filter start
+      document.write("<h3>Array Filter</h3> ");
+
+      var number = [30, 40, 50, 55, 60, 70, 80, 90, 105];
+
+      var results = number.filter(function (items) {
+        return items > 30;
+      });
+
+      document.write(results);
+      document.write("<br>");
+      document.write("<br>");
+    </script>
+
+    <script>
+      // find array  and find index array js practices start
+
+      // find array start
+      document.write("<h3>Find Array</h3> <br>");
+
+      var find = [5, 15, 20, 30, 70, 90];
+
+      var result = find.find(function (finditem) {
+        return finditem > 30;
+      });
+      document.write(result);
+
+      // find array end
+
+      document.write("<br>");
+      document.write("<br>");
+
+      // findindex arrray start
+      document.write("<h3>FindIndex Array</h3> ");
+
+      var findindex = [12, 15, 20, 27, 35, 45, 60, 70, 85, 90];
+
+      var findindexresult = findindex.findIndex(function (findindexitem) {
+        return findindexitem > 27;
+      });
+
+      document.write(findindexresult);
+      document.write("<br>");
+      document.write("<br>");
+
+      // findindex arrray end
+
+      // Array ForEach Method start
+
+      document.write("<h3>Array ForEach Method</h3> <br>");
+
+      var foreach = [
+        10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80,
+      ];
+
+      foreach.forEach(function (foreachitem) {
+        document.write(foreachitem + "<br>");
+      });
+      document.write("<br>");
+      document.write("<br>");
+
+      // Array ForEach Method end
+
+      // Array Includes And IndexOf start
+
+      // Array Includes start
+
+      document.write("<h3>Array Includes Method</h3> <br>");
+
+      var includes = [
+        10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80,
+      ];
+
+      var includesresult = includes.includes(40);
+      document.write(includesresult);
+
+      document.write("<br>");
+      document.write("<br>");
+      // Array Includes end
+
+      // Array IndexOf start
+
+      document.write("<h3>Array IndexOf Method</h3> ");
+
+      var indexof = [
+        10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80,
+      ];
+
+      var indexofresult = indexof.indexOf(40);
+      document.write(indexofresult);
+      document.write("<br>");
+      document.write("<br>");
+
+      // Array IndexOf end
+
+
+      // Array Pop Push Reverse start
+
+      // Array Reverse start
+
+      document.write("<h3>Array Reverse Method</h3> ");
+      var reverse = [
+        10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80
+      ];
+
+      var reverseresult = reverse.reverse();
+      document.write(reverseresult);
+      
+
+      // Array Reverse end
+      document.write("<br>");
+      document.write("<br>");
+      // Array Pop start
+
+      document.write("<h3>Array Pop Method</h3> ");
+
+
+      var arraypop = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80];
+      arraypop. pop();
+      document.write(arraypop);
+
+        // Array Pop end
+
+        // array push start
+
+      document.write("<h3>Array push Method</h3> ");
+
+
+      var arraypush = [10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80];
+      arraypop. push(85,90,95,100);
+      document.write(arraypop);
+
+        // array push end
+
+      // Array Pop Push Reverse end
+
+      document.write("<br>");
+      document.write("<br>");
+
+      // Array Slice And Sort start
+  
+      // array sort start (small to big)
+
+      document.write("<h4>Array sort Method</h4>");
+
+      var arraysort = [
+        45, 50, 55, 10, 15, 20, 25, 30, 35, 40, 70, 75, 80, 60, 65 ];
+      arraysort.sort();
+      document.write(arraysort + "<br>");
+
+      // array sort end  (small to big)
+
+      document.write("<br>");
+      document.write("<br>");
+
+      //array slice start
+
+      document.write("<h4>Array slice Method</h4>");
+
+      var arrayslice = [45, 50, 55, 10, 15, 20, 25, 30, 35, 40, 70, 75, 80, 60, 65];
+     arraysliceresult = arrayslice.slice(1,4);
+      document.write(arraysliceresult);
+
+      //array slice end
+
+
+      // array splice start
+      document.write("<h4>Array splice Method</h4>");
+        //  splicework: arrayspliceresult = arraysplice. splice((index),(removeindex),(item))
+
+      var arraysplice = [45, 50, 55, 10, 15, 20, 25, 30, 35, 40, 70, 75, 80, 60, 65];
+     arrayspliceresult = arrayslice.splice(1,4);
+      document.write(arrayspliceresult);
+      document.write("<br>");
+      // add splice array
+
+      document.write("<h4>Array add splice Method</h4>");
+      var addsplice = [45, 50, 55, 10, 15, 20, 25, 30, 35, 40, 70, 75, 80, 60, 65];
+       addsplice.splice(5,0,16);
+      document.write(addsplice);
+
+      // array splice end
+
+      // find array  and find index array js practices start
+    </script>
+  </body>
+</html>
