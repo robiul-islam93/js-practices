@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Alert</title>
+</head>
+<body>
+    <button onclick="objclose()">Click</button>
+
+    <script>
+        // js alart function start
+
+        document.write("<h3>Displays the alert box containing message with ok button</h3>");
+        function objalert(){
+            alert("Save Successfully")
+        }
+        // js alart function end 
+
+        // js confirm() function practices start
+
+        function objconfirm(){
+          let result =  confirm("Are You Confirm");
+          document.write(result);
+        }
+
+        // js confirm() function practices end
+
+        // js prompt() function start
+
+        // input get users (prompt)
+
+        function objprompt(){
+            let name = prompt()
+            document.write(name);
+        }
+
+        // js prompt() function end
+
+        // js function open() start
+
+        function objopen(){
+
+            open();
+        }
+        // js function open() end
+
+        // js function close() start
+
+        function objclose(){
+
+            close();
+        }
+        // js function close() end
+
+
+        // js function setTimeout() start
+
+        setTimeout(function(){
+            alert("After 5Minte");
+        }, 10000);
+        // js function setTimeout() end
+
+
+
+
+    </script>
+</body>
+</html>
