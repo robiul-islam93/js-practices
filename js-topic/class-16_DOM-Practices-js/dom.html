@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Practices</title>
+</head>
+<body>
+    
+    <!-- HTML DOM Document start -->
+    
+    <h4></h4>
+
+    <button onclick="Demo()">click</button>
+    <br>
+    <br>
+    <br>
+
+    <button onclick="replace()">click</button>
+
+
+    <button onclick="windowOpen()">Try it</button>
+
+    <!-- HTML DOM Document end -->
+    <h1>All kinds of pictures are kept inside this folder for everyone to see.
+        Thanks</h1>
+<script>
+
+     // HTML DOM Document domain check start
+
+     function Demo(){
+            var info=document.domain;
+            document.getElementsByTagName("h4")[0].innerHTML=info;
+        }
+
+     // HTML DOM Document domain check end
+
+
+
+        // HTML DOM Document html replace start
+
+        function replace(){
+            document.open('html/text','replace');
+            document.write('<h2>Booooooooooooooooom</h2>');
+            document.close();
+        }
+
+        // HTML DOM Document html replace end
+
+        
+        // new window open DOM Document start
+
+        function windowOpen(){
+            let w = window.open()
+            w.document.open();
+            w.document.write('<h1>Wellcome to New Tab Sir</h1>');
+            w.document.close();
+        }
+
+        // new window open DOM Document end
+
+
+
+</script>
+     
+
+</body>
+</html>

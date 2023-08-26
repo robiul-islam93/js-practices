@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS DOM Practices</title>
+  </head>
+  <body>
+    <h2>JS DOM Practices</h2>
+
+    <!-- getElementsByClassName start -->
+
+    <h1 class="document"></h1>
+
+    <h6 class="document"></h6>
+
+    <button class="document"></button>
+    <!-- getElementsByClassName end -->
+
+    <!-- getElementsById start -->
+
+    <p id="text"></p>
+
+    <!-- getElementsById end -->
+
+
+    <script>
+
+        // getElementsByClassName start
+
+      var myElement = document.getElementsByClassName("document");
+      myElement[0].innerHTML="H1 Heading 0";
+
+      var myElement = document.getElementsByClassName("document");
+      myElement[1].innerHTML="H6 Heading 1";
+
+      var myElement = document.getElementsByClassName("document");
+      myElement[2].innerHTML="Button 2";
+      
+      // getElementsByClassName end
+
+        // getElementsById start
+      var MyElement = document.getElementById("text");
+
+      MyElement.innerHTML="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet ";
+    // getElementsById end
+
+
+
+
+    </script>
+  </body>
+</html>
