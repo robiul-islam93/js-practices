@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Common Even Practices in JS</title>
+  </head>
+  <body onload="myEvent('Web Page all Load')">
+
+    <!-- js Event practices start -->
+
+    <button onclick="myEvent('Mouse Click Hoice')">Onclick</button>
+    <button onmouseover="myEvent('Muse Hover Hoiyese')">Onmouseover</button>
+    <button onmouseout="myEvent('Mouse Out Hoiyese')">onmouseout</button>
+    <br /><br />
+
+    <input onchange="myEvent('Change Hoiyese')" /><br />
+    <input onkeyup="myEvent('Key Up Hoiyece Hoiyese')" /><br />
+    <input onkeydown="myEvent('Key Down Hoiyese')" /><br />
+
+    <script>
+      function myEvent(msg) {
+        console.log(msg);
+      }
+
+   // js Event practices end
+
+    </script>
+  </body>
+</html>
