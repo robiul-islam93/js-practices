@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Change Attribute Value</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <img 
+    id="myImg"
+    src="./chrng-img.jpg" 
+    alt="img"
+    width="150"
+    height="150"
+    
+    >
+
+    <button onclick="changeatt()">Change</button>
+    <button onclick="addatt()">Recovery</button>
+    <script>
+
+        // DOM Change Attribute Value
+
+        function changeatt(){
+
+            var myimg = document.getElementById('myImg');
+                myimg.src="DOM-change-attbt.png"
+                myimg.width= "200"
+                myimg.height= "200"
+                
+        }
+        function addatt(){
+
+            var myimg = document.getElementById('myImg');
+                myimg.src="chrng-img.jpg"
+                myimg.width= "150"
+                myimg.height= "150"
+                
+        }
+
+    </script>
+
+</body>
+</html>

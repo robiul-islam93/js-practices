@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM Query Selector</title>
+</head>
+<body>
+    
+    <h1 id="myId">h1</h1>
+    <h6 class="myClass">h6</h6>
+    <p name="myName">p</p>
+    <h4>h4</h4>
+    <button onclick="findquery()">Query</button>
+
+    <script>
+
+        function findquery(){
+            document.querySelector('h4').innerHTML="h4 Manupulated"
+            document.querySelector('#myId').innerHTML="h1 Manupulated"
+            document.querySelector('.myClass').innerHTML="h6 Manupulated"
+            document.querySelector('p[name="myName"]').innerHTML="p Manupulated"
+        }
+
+    </script>
+
+</body>
+</html>

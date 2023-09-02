@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input sum JS DOM Practices</title>
+</head>
+<body>
+    
+    <input id="sum1"><br><br>
+    <input id="sum2"><br><br>
+    <button onclick="sumNumber()">Submit</button>
+
+    <script>
+
+        function sumNumber(){
+            let num1 = document.getElementById('sum1').value;
+            let num2 = document.getElementById('sum2').value;
+
+            let result = parseFloat(num1)+ parseFloat(num2);
+
+            document.write("Your Sum Result " );
+            
+            document.write(  result);
+
+        }
+
+
+    </script>
+</body>
+</html>
